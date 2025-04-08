@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+
+<h1 style="text-align: center;">회원가입신청서</h1>
+
+<style>
+  table{ border-collapse : collapse; }  /*이중선 제거*/
+  th,td{
+       width: 100px;
+       height: 50px;
+       text-align: center;
+       border: 1px solid #000;
+
+       vertical-align: top;	/* 위 */
+       vertical-align: bottom;   /* 아래 */
+       vertical-align: middle;   /* 가운데 */
+     }
+</style>
+<br>
+<table>
+  <tr>
+    <th scope="col"style="width: 100px">성명</th>
+    <th scope="col"style="width: 300px"><input type="text"></th>
+    <th scope="col"style="width: 100px">아이디</th>
+    <th scope="col"style="width: 300px"><input type="id"></th>
+    <th scope="col"style="width: 100px">비밀번호</th>
+    <th input type="label" scope="col"colspan="4"><input type="password">
+    </tr>
+  <tr>
+    <th scope="col"style="width: 100px">기업명</th>
+    <th scope="col"style="width: 500px"><input type="name">
+    </th>
+    <th scope="col"style="width: 100px">사업자<br>등록번호</th>
+    <th input type="label" scope="col"colspan="3"><input type="number">
+    </th>
+  </tr>
+  <tr>
+    <th scope="col"style="width: 100px">설립일</th>
+    <th scope="col"style="width: 150px"><input type="date"></th>
+    <th scope="col"style="width: 100px">대표자 성명</th>
+    <th scope="col"style="width: 150px"><input type="name"></th>
+    <th scope="col"style="width: 100px">대 표 자<br>생년월일</th>
+    <th scope="col"style="width: 350px"><input type="date"></th>
+  </tr>
+  <tr>
+    <th scope="col"style="width: 100px">기업형태<br>(중복체크가능)</th>
+    <td scope="col"style="width: 150px">
+      <label for="check2">&emsp;&emsp;사회적기업</label>
+      <input type="checkbox" id="check2" name="check1" />
+      <label for="check3">&emsp;&emsp;예비 사회적기업</label>
+      <input type="checkbox" id="check3" name="check1" /><br>
+      <label for="check4">&emsp;&emsp;협동조합</label>
+      <input type="checkbox" id="check4" name="check1" />
+      <label for="check5">&emsp;&emsp;사회적협동조합</label>
+      <input type="checkbox" id="check5" name="check1" /><br/>
+      <label for="check6">&emsp;&emsp;영농조합법인</label>
+      <input type="checkbox" id="check6" name="check1" />
+      <label for="check7">&emsp;&emsp;자활기업</label>
+      <input type="checkbox" id="check7" name="check1" /><br>
+      <label for="check8">&emsp;&emsp;기 타( )</label>
+      <input type="checkbox" id="check8" name="check1" />
+    </td>
+    <th scope="col"style="width: 100px">주요 사업</th>
+    <th scope="col"colspan="3"><input type="text">
+  </tr>
+  <tr>
+    <th scope="col"style="width: 100px">주 소</th>
+    <th scope="col"style="width: 150px"><input type="text"></th>
+    <th scope="col"style="width: 100px">이메일</th>
+    <th scope="col"colspan="5"><input type="email"></th>
+  </tr>
+  <tr>
+    <th scope="col"style="width: 100px">전화번호</th>
+    <th scope="col"colspan="1"><input type="tel"></th>
+    <th scope="col"style="width: 100px">대 표 자<br>휴대전화</th>
+    <th scope="col"colspan="3"><input type="tel"></th>
+  </tr>
+</table>
+<br>
+<h1 style="text-align: center; font-size:18pt">정선군사회적경제협의회의 설립목적에 찬동하고 정관에 정한
+                                사항을 준수할 것을 서약하며 회원가입을 신청합니다.</h1>
+</br>
+<br>
+<h1 style="text-align: right; font-size:20pt">년&emsp;&emsp;&emsp;&emsp;월&emsp;&emsp;&emsp;&emsp;일</h1>
+<br>
+<h1 style="text-align: right; font-size:20pt">기업명&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+<p>
+<h1 style="text-align: right; font-size:20pt">대표자&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(서명)</h1>
+</p>
+<br>
+<p>
+<h1 style="text-align: center; font-size: 30pt">정선군사회적경제협의회</h1>
+</p>
+
+<head>
+  <title>html Test</title>
+  <script src="test.js">></script>
+</head>
+
+</body>
+<!--<script<-->
+<script>
+  let nameObject = document.getElementById("fName");
+  nameObject.value = "성입니다.";
+  let labelName = document.querySelector("body > form > label:nth-child(1)");
+  labelName.innerText = "성을 입력하세요.";
+  alert( document.getElementById("fName").value );
+</script>
+</html>
