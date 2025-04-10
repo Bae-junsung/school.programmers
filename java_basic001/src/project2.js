@@ -1,7 +1,3 @@
-console.log(p1);
-console.log(JSON.stringify(p1));
-
-// JavaScript에서 클래스 선언하고 객체 탄생하는 방법으로 사용한다.
 class Car {
     name = "";
     model = "";
@@ -33,4 +29,5 @@ fiat500.stop();
 
 let accentMd = new Car("Accent", "MD", "700kg", "gray");
 accentMd.start();
+accentMd.stop();
 
